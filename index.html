@@ -1,0 +1,1158 @@
+﻿<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEJURDA FORKI Sumatera Barat 2026 – Kabupaten Pasaman</title>
+  <meta name="description" content="Kejuaraan Daerah FORKI Sumatera Barat 2026 di Kabupaten Pasaman. Informasi resmi jadwal, venue, kategori pertandingan, dan pendaftaran.">
+  <meta name="keywords" content="FORKI, Kejurda, Sumatera Barat, Karate, Pasaman, 2026">
+  <meta name="theme-color" content="#071C3C">
+  <link rel="icon" type="image/png" href="logo-pasaman.png">
+
+  <!-- CDN Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #F8FAFC; overflow-x: hidden; color: #1E293B; }
+
+    :root {
+      --navy: #071C3C;
+      --navy-dark: #03101F;
+      --gold: #D8A62A;
+      --accent: #F59E0B;
+      --bg: #F8FAFC;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .glass-dark {
+      background: rgba(7,28,60,0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(216,166,42,0.15);
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .aurora {
+      background: linear-gradient(135deg, #071C3C 0%, #0a2a5e 25%, #1a4a8a 50%, #D8A62A 75%, #F59E0B 100%);
+      background-size: 400% 400%;
+      animation: auroraShift 15s ease infinite;
+    }
+    @keyframes auroraShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #D8A62A, #F59E0B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .glow-gold { box-shadow: 0 0 30px rgba(216,166,42,0.15), 0 0 60px rgba(216,166,42,0.05); }
+
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    #particles-canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+    .gradient-border { position: relative; }
+    .gradient-border::before {
+      content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+      background: linear-gradient(135deg, rgba(216,166,42,0.4), rgba(216,166,42,0.1), rgba(216,166,42,0.4));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #D8A62A, #F59E0B); color: #071C3C; font-weight: 600;
+      border-radius: 12px; padding: 14px 32px;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); position: relative; overflow: hidden;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(216,166,42,0.35); }
+
+    .btn-outline {
+      background: transparent; color: white; font-weight: 600; border-radius: 12px; padding: 14px 32px;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-outline:hover { border-color: #D8A62A; background: rgba(216,166,42,0.08); box-shadow: 0 0 30px rgba(216,166,42,0.15); }
+
+    [x-cloak] { display: none !important; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #F1F5F9; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(135deg, #071C3C, #1a4a8a); border-radius: 3px; }
+
+    .blob { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+
+    .wave-divider { position: relative; width: 100%; height: 80px; }
+    .wave-divider svg { position: absolute; bottom: 0; width: 100%; height: 100%; }
+
+    .timeline-line {
+      position: absolute; left: 50%; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(180deg, #D8A62A, rgba(216,166,42,0.2), #D8A62A);
+      transform: translateX(-50%); box-shadow: 0 0 15px rgba(216,166,42,0.3);
+    }
+    .timeline-dot {
+      width: 20px; height: 20px; border-radius: 50%;
+      background: linear-gradient(135deg, #D8A62A, #F59E0B);
+      box-shadow: 0 0 20px rgba(216,166,42,0.4); position: absolute;
+      left: 50%; transform: translateX(-50%); z-index: 2;
+    }
+
+    .card-lift { transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .card-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(7,28,60,0.1); }
+
+    .progress-glow {
+      background: linear-gradient(90deg, #D8A62A, #F59E0B);
+      box-shadow: 0 0 12px rgba(216,166,42,0.3); border-radius: 999px; height: 8px;
+      transition: width 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .masonry-grid { column-count: 3; column-gap: 20px; }
+    .masonry-item { break-inside: avoid; margin-bottom: 20px; }
+    @media (max-width: 1024px) { .masonry-grid { column-count: 2; } }
+    @media (max-width: 640px) { .masonry-grid { column-count: 1; } }
+
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.4s ease; opacity: 0; }
+    .faq-open .faq-content { max-height: 600px; opacity: 1; }
+    .faq-toggle { transition: transform 0.4s ease; }
+    .faq-open .faq-toggle { transform: rotate(180deg); }
+
+    #scroll-progress {
+      position: fixed; top: 0; left: 0; width: 0%; height: 3px;
+      background: linear-gradient(90deg, #D8A62A, #F59E0B); z-index: 1000; transition: width 0.1s linear;
+    }
+
+    .nav-scrolled {
+      background: rgba(7,28,60,0.85) !important;
+      backdrop-filter: blur(24px) !important;
+      -webkit-backdrop-filter: blur(24px) !important;
+      border-bottom: 1px solid rgba(216,166,42,0.1) !important;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.1) !important;
+    }
+
+    .img-zoom-wrapper { overflow: hidden; border-radius: inherit; }
+    .img-zoom-wrapper img { transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .img-zoom-wrapper:hover img { transform: scale(1.08); }
+
+    .status-tersedia { background: #dcfce7; color: #166534; }
+    .status-terbatas { background: #fef9c3; color: #854d0e; }
+    .status-penuh { background: #fee2e2; color: #991b1b; }
+
+    .opd-scroll { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+    .opd-scroll::-webkit-scrollbar { display: none; }
+    .opd-scroll > * { scroll-snap-align: start; }
+
+    .glow-border-hover { transition: all 0.4s ease; }
+    .glow-border-hover:hover { border-color: rgba(216,166,42,0.3); box-shadow: 0 0 30px rgba(216,166,42,0.1), inset 0 0 30px rgba(216,166,42,0.03); }
+
+    #back-to-top { opacity: 0; visibility: hidden; transition: all 0.4s ease; }
+    #back-to-top.visible { opacity: 1; visibility: visible; }
+
+    #loading-screen {
+      position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center;
+      background: #071C3C; transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+    #loading-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+    .loader-ring { width: 60px; height: 60px; border-radius: 50%; border: 3px solid rgba(216,166,42,0.1); border-top-color: #D8A62A; animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 768px) {
+      .timeline-line { left: 24px; }
+      .timeline-dot { left: 24px; }
+    }
+
+    .section-padding { padding: 100px 0; }
+    @media (max-width: 768px) { .section-padding { padding: 60px 0; } }
+
+    .nav-link { position: relative; color: rgba(255,255,255,0.8); transition: color 0.3s ease; }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
+      background: #D8A62A; transition: width 0.3s ease;
+    }
+    .nav-link:hover { color: white; }
+    .nav-link:hover::after { width: 100%; }
+
+    .map-placeholder { background: linear-gradient(135deg, #e2e8f0, #cbd5e1); min-height: 300px; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+  </style>
+</head>
+<body>
+
+<div id="loading-screen">
+  <div class="text-center">
+    <div class="loader-ring mx-auto mb-6"></div>
+    <p class="text-sm tracking-[0.3em] uppercase" style="color:#D8A62A;">Memuat...</p>
+  </div>
+</div>
+
+<div id="scroll-progress"></div>
+
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+     x-data="{ mobileOpen: false }"
+     :class="mobileOpen ? 'nav-scrolled' : ''">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <div class="flex items-center gap-3">
+        <img src="logo-pasaman.png" alt="Pasaman" class="w-9 h-9 rounded-full object-contain">
+        <img src="logo-forki.png" alt="FORKI" class="w-9 h-9 rounded-full object-contain">
+        <div class="hidden sm:block">
+          <p class="text-white text-sm font-bold leading-tight">FORKI SUMBAR</p>
+          <p class="text-[#D8A62A] text-[10px] tracking-[0.2em] uppercase">Kejurda 2026</p>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#beranda" class="nav-link text-sm font-medium">Beranda</a>
+        <a href="#tentang" class="nav-link text-sm font-medium">Tentang</a>
+        <a href="#venue" class="nav-link text-sm font-medium">Venue</a>
+        <a href="#kategori" class="nav-link text-sm font-medium">Kategori</a>
+        <a href="#jadwal" class="nav-link text-sm font-medium">Jadwal</a>
+        <a href="#faq" class="nav-link text-sm font-medium">FAQ</a>
+        <a href="#kontak" class="btn-primary text-sm !py-2.5 !px-6">Hubungi Kami</a>
+      </div>
+
+      <button class="lg:hidden text-white p-2" @click="mobileOpen = !mobileOpen" aria-label="Toggle menu">
+        <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg x-show="mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div x-show="mobileOpen" x-cloak
+       x-transition:enter="transition ease-out duration-300"
+       x-transition:enter-start="opacity-0 -translate-y-4"
+       x-transition:enter-end="opacity-100 translate-y-0"
+       x-transition:leave="transition ease-in duration-200"
+       x-transition:leave-start="opacity-100 translate-y-0"
+       x-transition:leave-end="opacity-0 -translate-y-4"
+       class="lg:hidden glass-dark border-t border-white/5">
+    <div class="px-4 py-6 space-y-3">
+      <a href="#beranda" class="block text-white/80 hover:text-white py-2 text-sm font-medium" @click="mobileOpen = false">Beranda</a>
+      <a href="#tentang" class="block text-white/80 hover:text-white py-2 text-sm font-medium" @click="mobileOpen = false">Tentang</a>
+      <a href="#venue" class="block text-white/80 hover:text-white py-2 text-sm font-medium" @click="mobileOpen = false">Venue</a>
+      <a href="#kategori" class="block text-white/80 hover:text-white py-2 text-sm font-medium" @click="mobileOpen = false">Kategori</a>
+      <a href="#jadwal" class="block text-white/80 hover:text-white py-2 text-sm font-medium" @click="mobileOpen = false">Jadwal</a>
+      <a href="#faq" class="block text-white/80 hover:text-white py-2 text-sm font-medium" @click="mobileOpen = false">FAQ</a>
+      <a href="#kontak" class="block text-center btn-primary text-sm mt-4" @click="mobileOpen = false">Hubungi Kami</a>
+    </div>
+  </div>
+</nav>
+
+<section id="beranda" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 aurora"></div>
+  <div class="absolute inset-0" style="background: radial-gradient(ellipse at center, transparent 0%, rgba(7,28,60,0.6) 100%);"></div>
+
+  <div class="blob w-[600px] h-[600px] bg-[#D8A62A]/10 -top-48 -right-48"></div>
+  <div class="blob w-[400px] h-[400px] bg-[#1a4a8a]/15 bottom-0 left-0"></div>
+  <div class="blob w-[300px] h-[300px] bg-[#D8A62A]/8 top-1/2 left-1/4"></div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
+
+    <div data-aos="fade-up" data-aos-delay="100" class="inline-flex items-center gap-2 glass-dark rounded-full px-5 py-2 mb-8">
+      <span class="w-2 h-2 rounded-full bg-[#D8A62A] animate-pulse"></span>
+      <span class="text-white/80 text-xs sm:text-sm font-medium tracking-wider">Kejuaraan Resmi FORKI Sumatera Barat</span>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="200" class="flex items-center justify-center gap-6 mb-8">
+      <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl glass flex items-center justify-center p-3">
+        <img src="logo-pasaman.png" alt="Kabupaten Pasaman" class="w-full h-full object-contain">
+      </div>
+      <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl glass flex items-center justify-center p-3">
+        <img src="logo-forki.png" alt="FORKI" class="w-full h-full object-contain">
+      </div>
+    </div>
+
+    <h1 data-aos="fade-up" data-aos-delay="300" class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white leading-[1.1] mb-4 tracking-tight">KEJUARAAN DAERAH</h1>
+    <div data-aos="fade-up" data-aos-delay="400">
+      <span class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gradient tracking-tight">FORKI</span>
+    </div>
+    <p data-aos="fade-up" data-aos-delay="500" class="text-2xl sm:text-3xl md:text-4xl font-light text-white/80 mt-2 tracking-wide">SUMATERA BARAT <span class="text-gradient font-semibold">2026</span></p>
+    <p data-aos="fade-up" data-aos-delay="550" class="text-lg sm:text-xl text-white/60 mt-2 font-medium tracking-[0.15em] uppercase">Kabupaten Pasaman</p>
+
+    <div data-aos="fade-up" data-aos-delay="600" class="flex items-center justify-center gap-3 sm:gap-5 mt-10" id="countdown">
+      <div class="text-center">
+        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-white" id="days">00</div>
+        <div class="text-[10px] sm:text-xs text-white/50 uppercase tracking-[0.2em] mt-1">Hari</div>
+      </div>
+      <span class="text-3xl sm:text-4xl text-[#D8A62A] font-light">:</span>
+      <div class="text-center">
+        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-white" id="hours">00</div>
+        <div class="text-[10px] sm:text-xs text-white/50 uppercase tracking-[0.2em] mt-1">Jam</div>
+      </div>
+      <span class="text-3xl sm:text-4xl text-[#D8A62A] font-light">:</span>
+      <div class="text-center">
+        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-white" id="minutes">00</div>
+        <div class="text-[10px] sm:text-xs text-white/50 uppercase tracking-[0.2em] mt-1">Menit</div>
+      </div>
+      <span class="text-3xl sm:text-4xl text-[#D8A62A] font-light">:</span>
+      <div class="text-center">
+        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-white" id="seconds">00</div>
+        <div class="text-[10px] sm:text-xs text-white/50 uppercase tracking-[0.2em] mt-1">Detik</div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="700" class="flex flex-wrap items-center justify-center gap-4 mt-10">
+      <a href="#tentang" class="btn-primary text-sm sm:text-base">Informasi Lengkap</a>
+      <a href="#jadwal" class="btn-outline text-sm sm:text-base">Lihat Jadwal</a>
+      <a href="#venue" class="btn-outline text-sm sm:text-base">Venue</a>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="800" class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
+      <span class="text-white/40 text-[10px] tracking-[0.2em] uppercase">Scroll</span>
+      <div class="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1.5">
+        <div class="w-1.5 h-3 rounded-full bg-[#D8A62A] animate-bounce"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative mt-8 md:mt-16 z-20 pb-20 md:pb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-aos="fade-up" class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <div class="glass-card rounded-2xl p-6 sm:p-8 text-center card-lift gradient-border">
+        <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071C3C]"><span class="counter-value" data-target="700">0</span><span class="text-gradient font-bold text-lg sm:text-xl">+</span></p>
+        <p class="text-sm text-slate-500 mt-1 font-medium">Atlet</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 text-center card-lift gradient-border">
+        <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071C3C]"><span class="counter-value" data-target="19">0</span><span class="text-gradient font-bold text-lg sm:text-xl">+</span></p>
+        <p class="text-sm text-slate-500 mt-1 font-medium">Kabupaten/Kota</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 text-center card-lift gradient-border">
+        <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071C3C]"><span class="counter-value" data-target="19">0</span><span class="text-gradient font-bold text-lg sm:text-xl">+</span></p>
+        <p class="text-sm text-slate-500 mt-1 font-medium">Kategori</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 text-center card-lift gradient-border">
+        <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071C3C]"><span class="counter-value" data-target="1">0</span><span class="text-gradient font-bold text-lg sm:text-xl">+</span></p>
+        <p class="text-sm text-slate-500 mt-1 font-medium">Venue</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tentang" class="section-padding relative overflow-hidden">
+  <div class="blob w-[500px] h-[500px] bg-[#071C3C]/5 top-0 right-0"></div>
+  <div class="blob w-[300px] h-[300px] bg-[#D8A62A]/5 bottom-0 left-0"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <div data-aos="fade-right" class="relative">
+        <div class="rounded-3xl overflow-hidden gradient-border">
+          <div class="img-zoom-wrapper">
+            <img src="foto-atlet-karate.jpg" alt="Atlet Karate" class="w-full h-full object-cover aspect-[4/3]">
+          </div>
+        </div>
+        <div class="absolute -bottom-4 -right-4 glass-dark rounded-2xl px-5 py-3 glow-gold float">
+          <p class="text-[#D8A62A] font-bold text-lg">19</p>
+          <p class="text-white/60 text-xs">Kategori</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-left">
+        <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Tentang Event</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3 leading-tight">Kejuaraan Daerah<br><span class="text-gradient">FORKI</span> Sumbar 2026</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mt-5 mb-6"></div>
+        <p class="text-slate-600 leading-relaxed text-base sm:text-lg">Kejuaraan Daerah (KEJURDA) FORKI Sumatera Barat Tahun 2026 merupakan ajang bergengsi bagi para atlet karate terbaik dari seluruh kabupaten/kota di Sumatera Barat. Diselenggarakan di Kabupaten Pasaman, kejuaraan ini menjadi wadah untuk menjaring atlet berbakat dan memperkuat silaturahmi antar pegiat karate se-Sumatera Barat.</p>
+        <p class="text-slate-600 leading-relaxed mt-4 text-base sm:text-lg">Dengan mengusung semangat sportivitas dan prestasi, KEJURDA 2026 menghadirkan pertandingan berkualitas dengan standar nasional yang didukung oleh pemerintah daerah dan berbagai Organisasi Perangkat Daerah (OPD) terkait.</p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <div class="flex items-center gap-2 text-slate-600">
+            <svg class="w-5 h-5 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span class="text-sm">15-20 Juni 2026</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-600">
+            <svg class="w-5 h-5 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span class="text-sm">GOR Pasaman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0 40 C 360 80, 1080 0, 1440 40 L 1440 80 L 0 80 Z" fill="#F8FAFC"/>
+  </svg>
+</div>
+
+<section id="jadwal" class="section-padding relative" style="background: #F8FAFC;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Jadwal</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3">Timeline Acara</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    <div class="relative">
+      <div class="timeline-line hidden md:block"></div>
+      <div class="space-y-8 md:space-y-16">
+
+        <div data-aos="fade-right" class="relative md:w-1/2 md:pr-16">
+          <div class="md:absolute md:right-[-10px] md:top-8 timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 card-lift gradient-border">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-xs font-bold text-[#D8A62A] bg-[#D8A62A]/10 px-3 py-1.5 rounded-full">Fase 1</span>
+              <span class="text-xs text-slate-400">Januari 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#071C3C]">Pendaftaran & Seleksi</h3>
+            <p class="text-slate-600 mt-2 text-sm leading-relaxed">Pembukaan pendaftaran untuk seluruh kontingen kabupaten/kota dan seleksi awal atlet.</p>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" class="relative md:w-1/2 md:ml-auto md:pl-16">
+          <div class="md:absolute md:left-[-10px] md:top-8 timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 card-lift gradient-border">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-xs font-bold text-[#D8A62A] bg-[#D8A62A]/10 px-3 py-1.5 rounded-full">Fase 2</span>
+              <span class="text-xs text-slate-400">Maret 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#071C3C]">Verifikasi & Teknis Meeting</h3>
+            <p class="text-slate-600 mt-2 text-sm leading-relaxed">Verifikasi berkas peserta, technical meeting dengan official kontingen, dan pengundian nomor pertandingan.</p>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" class="relative md:w-1/2 md:pr-16">
+          <div class="md:absolute md:right-[-10px] md:top-8 timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 card-lift gradient-border">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-xs font-bold text-[#D8A62A] bg-[#D8A62A]/10 px-3 py-1.5 rounded-full">Fase 3</span>
+              <span class="text-xs text-slate-400">Juni 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#071C3C]">Pelaksanaan Kejurda</h3>
+            <p class="text-slate-600 mt-2 text-sm leading-relaxed">Pelaksanaan pertandingan karate untuk seluruh kategori yang diikuti oleh atlet terbaik dari 19 kabupaten/kota.</p>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" class="relative md:w-1/2 md:ml-auto md:pl-16">
+          <div class="md:absolute md:left-[-10px] md:top-8 timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 card-lift gradient-border">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-xs font-bold text-[#D8A62A] bg-[#D8A62A]/10 px-3 py-1.5 rounded-full">Fase 4</span>
+              <span class="text-xs text-slate-400">Juni 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#071C3C]">Penutupan & Awards</h3>
+            <p class="text-slate-600 mt-2 text-sm leading-relaxed">Upacara penutupan, pengumuman juara umum, dan pemberian penghargaan kepada atlet terbaik.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section id="venue" class="section-padding relative overflow-hidden" style="background:#F8FAFC;">
+  <div class="blob w-[400px] h-[400px] bg-[#071C3C]/5 -top-20 -left-20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Lokasi</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3">Venue Pertandingan</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+      <div class="md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden gradient-border">
+        <div class="aspect-[4/3] md:aspect-auto md:h-full bg-gradient-to-br from-[#071C3C] to-[#1a4a8a] flex items-center justify-center">
+          <div class="text-center p-8">
+            <svg class="w-24 h-24 mx-auto text-[#D8A62A]/30 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008z"/>
+            </svg>
+            <p class="text-white/60 text-lg font-medium">GOR Pasaman</p>
+            <p class="text-white/40 text-sm mt-2">Venue Utama Kejurda FORKI Sumbar 2026</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden gradient-border row-span-1" style="min-height: 250px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.606965397073!2d100.16603463355986!3d0.13919334371772912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302a9a03114676f7%3A0x744890746f20729a!2sGOR%20Tuanku%20Rao!5e1!3m2!1sid!2sid!4v1781788965024!5m2!1sid!2sid" width="100%" height="100%" style="border:0; min-height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+      </div>
+
+      <div class="glass-card rounded-3xl p-6 card-lift gradient-border">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-[#D8A62A]/10 flex items-center justify-center">
+            <svg class="w-5 h-5 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-[#071C3C]">Informasi Venue</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3 text-sm text-slate-600">
+            <svg class="w-4 h-4 text-[#D8A62A] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Jl. Raya Pasaman, Sumatera Barat
+          </li>
+          <li class="flex items-start gap-3 text-sm text-slate-600">
+            <svg class="w-4 h-4 text-[#D8A62A] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Kapasitas: 2.500 Kursi
+          </li>
+          <li class="flex items-start gap-3 text-sm text-slate-600">
+            <svg class="w-4 h-4 text-[#D8A62A] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+            Akses: 15 menit dari pusat kota
+          </li>
+        </ul>
+      </div>
+
+      <div class="glass-card rounded-3xl p-6 card-lift gradient-border">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-[#D8A62A]/10 flex items-center justify-center">
+            <svg class="w-5 h-5 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          </div>
+          <h3 class="font-bold text-[#071C3C]">Fasilitas</h3>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="flex items-center gap-2 text-sm text-slate-600"><svg class="w-4 h-4 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> AC Central</div>
+          <div class="flex items-center gap-2 text-sm text-slate-600"><svg class="w-4 h-4 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Lobby Luas</div>
+          <div class="flex items-center gap-2 text-sm text-slate-600"><svg class="w-4 h-4 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Parkir Luas</div>
+          <div class="flex items-center gap-2 text-sm text-slate-600"><svg class="w-4 h-4 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Musholla</div>
+          <div class="flex items-center gap-2 text-sm text-slate-600"><svg class="w-4 h-4 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Ruang Ganti</div>
+          <div class="flex items-center gap-2 text-sm text-slate-600"><svg class="w-4 h-4 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Kantin</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider -scale-y-100">
+  <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0 40 C 360 80, 1080 0, 1440 40 L 1440 80 L 0 80 Z" fill="#F8FAFC"/>
+  </svg>
+</div>
+
+<section id="kategori" class="section-padding relative overflow-hidden" style="background: linear-gradient(180deg, #F8FAFC, #ffffff);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Kelas</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3">Kategori Pertandingan</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      <div data-aos="fade-up" class="rounded-3xl p-6 sm:p-8 card-lift gradient-border group" style="background: linear-gradient(135deg, rgba(7,28,60,0.05), rgba(26,74,138,0.08));">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#071C3C]">Kata</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">Seni gerakan karate yang menampilkan keindahan, ketepatan, dan kekuatan teknik dasar karate secara individu maupun beregu.</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs bg-[#071C3C]/5 text-[#071C3C] px-3 py-1 rounded-full">Individu</span>
+          <span class="text-xs bg-[#071C3C]/5 text-[#071C3C] px-3 py-1 rounded-full">Beregu</span>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100" class="rounded-3xl p-6 sm:p-8 card-lift gradient-border group" style="background: linear-gradient(135deg, rgba(216,166,42,0.05), rgba(245,158,11,0.08));">
+        <div class="w-14 h-14 rounded-2xl bg-[#D8A62A]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+          <svg class="w-7 h-7 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#071C3C]">Kumite</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">Pertarungan langsung antar atlet karate yang mempertandingkan teknik, kecepatan, dan strategi dalam kelas yang ditentukan.</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs bg-[#D8A62A]/10 text-[#D8A62A] px-3 py-1 rounded-full">Individu</span>
+          <span class="text-xs bg-[#D8A62A]/10 text-[#D8A62A] px-3 py-1 rounded-full">Beregu</span>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200" class="rounded-3xl p-6 sm:p-8 card-lift gradient-border group sm:col-span-2 lg:col-span-1" style="background: linear-gradient(135deg, rgba(7,28,60,0.05), rgba(216,166,42,0.08));">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#071C3C]/10 to-[#D8A62A]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#071C3C]">Kategori Khusus</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">Kategori pertandingan tambahan yang disesuaikan dengan kelompok usia dan jenis kelamin. Total 19 kategori pertandingan.</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs bg-gradient-to-r from-[#071C3C]/5 to-[#D8A62A]/10 text-[#071C3C] px-3 py-1 rounded-full">Usia Dini</span>
+          <span class="text-xs bg-gradient-to-r from-[#071C3C]/5 to-[#D8A62A]/10 text-[#071C3C] px-3 py-1 rounded-full">Pra Remaja</span>
+          <span class="text-xs bg-gradient-to-r from-[#071C3C]/5 to-[#D8A62A]/10 text-[#071C3C] px-3 py-1 rounded-full">Remaja</span>
+          <span class="text-xs bg-gradient-to-r from-[#071C3C]/5 to-[#D8A62A]/10 text-[#071C3C] px-3 py-1 rounded-full">Senior</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-padding relative overflow-hidden" style="background: #F8FAFC;">
+  <div class="blob w-[500px] h-[500px] bg-[#D8A62A]/5 top-0 right-0"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Kolaborasi</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3">OPD Mitra Kolaborasi</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    <div class="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+      <div data-aos="fade-up" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Pariwisata</h3>
+        <p class="text-slate-500 text-xs mt-1">Promosi Wisata & Budaya</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="50" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.438 60.438 0 0-.96 15.1 240 240 0 0 0 12.37 0 60.44 60.44 0 0 0-.96-15.1m9.27 0A60.437 60.437 0 0 1 12 12a60.437 60.437 0 0 1-5.57-1.853m9.27 0A60.44 60.44 0 0 0 12 6.75a60.44 60.44 0 0 0-5.57 1.853"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Pendidikan</h3>
+        <p class="text-slate-500 text-xs mt-1">Pendidikan & Pembinaan</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas PUPR</h3>
+        <p class="text-slate-500 text-xs mt-1">Infrastruktur & Venue</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Kesehatan</h3>
+        <p class="text-slate-500 text-xs mt-1">Kesehatan Atlet</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Kominfo</h3>
+        <p class="text-slate-500 text-xs mt-1">Informasi & Komunikasi</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="250" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Perhubungan</h3>
+        <p class="text-slate-500 text-xs mt-1">Transportasi</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dispora</h3>
+        <p class="text-slate-500 text-xs mt-1">Olahraga & Pemuda</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="350" class="glass-card rounded-2xl p-6 text-center card-lift glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">BPBD</h3>
+        <p class="text-slate-500 text-xs mt-1">Kebencanaan & Darurat</p>
+      </div>
+    </div>
+
+    <div class="sm:hidden opd-scroll flex gap-4 pb-4">
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Pariwisata</h3>
+        <p class="text-slate-500 text-xs mt-1">Promosi Wisata & Budaya</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.438 60.438 0 0-.96 15.1 240 240 0 0 0 12.37 0 60.44 60.44 0 0 0-.96-15.1m9.27 0A60.437 60.437 0 0 1 12 12a60.437 60.437 0 0 1-5.57-1.853m9.27 0A60.44 60.44 0 0 0 12 6.75a60.44 60.44 0 0 0-5.57 1.853"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Pendidikan</h3>
+        <p class="text-slate-500 text-xs mt-1">Pendidikan & Pembinaan</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas PUPR</h3>
+        <p class="text-slate-500 text-xs mt-1">Infrastruktur & Venue</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Kesehatan</h3>
+        <p class="text-slate-500 text-xs mt-1">Kesehatan Atlet</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Kominfo</h3>
+        <p class="text-slate-500 text-xs mt-1">Informasi & Komunikasi</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dinas Perhubungan</h3>
+        <p class="text-slate-500 text-xs mt-1">Transportasi</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">Dispora</h3>
+        <p class="text-slate-500 text-xs mt-1">Olahraga & Pemuda</p>
+      </div>
+      <div class="glass-card rounded-2xl p-6 text-center min-w-[240px] glow-border-hover gradient-border">
+        <div class="w-14 h-14 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-[#071C3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+        </div>
+        <h3 class="font-bold text-[#071C3C] text-sm">BPBD</h3>
+        <p class="text-slate-500 text-xs mt-1">Kebencanaan & Darurat</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-padding relative overflow-hidden" style="background: linear-gradient(180deg, #ffffff, #F8FAFC);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Kesiapan</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3">Persiapan Daerah</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 sm:gap-12">
+      <div data-aos="fade-right" class="glass-card rounded-3xl p-6 sm:p-8 gradient-border">
+        <h3 class="text-lg font-bold text-[#071C3C] mb-6">Progress Persiapan</h3>
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-slate-600 font-medium">Kesiapan Venue</span>
+              <span class="text-[#D8A62A] font-bold">95%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+              <div class="progress-glow" style="width:95%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-slate-600 font-medium">Kesiapan Atlet</span>
+              <span class="text-[#D8A62A] font-bold">85%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+              <div class="progress-glow" style="width:85%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-slate-600 font-medium">Kesiapan Akomodasi</span>
+              <span class="text-[#D8A62A] font-bold">90%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+              <div class="progress-glow" style="width:90%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-slate-600 font-medium">Kesiapan Protokol</span>
+              <span class="text-[#D8A62A] font-bold">75%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+              <div class="progress-glow" style="width:75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" class="glass-card rounded-3xl p-6 sm:p-8 gradient-border">
+        <h3 class="text-lg font-bold text-[#071C3C] mb-6">Checklist Kesiapan</h3>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 shrink-0"><svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+            <div><p class="text-sm font-medium text-[#071C3C]">Venue Utama Siap</p><p class="text-xs text-slate-500">GOR Pasaman telah selesai renovasi</p></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 shrink-0"><svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+            <div><p class="text-sm font-medium text-[#071C3C]">Pendaftaran Dibuka</p><p class="text-xs text-slate-500">Seluruh kontingen dapat mendaftar</p></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 shrink-0"><svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+            <div><p class="text-sm font-medium text-[#071C3C]">Akomodasi Tersedia</p><p class="text-xs text-slate-500">Hotel dan penginapan siap menerima tamu</p></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-yellow-100 flex items-center justify-center mt-0.5 shrink-0"><svg class="w-3.5 h-3.5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <div><p class="text-sm font-medium text-[#071C3C]">Protokol Kesehatan</p><p class="text-xs text-slate-500">Dalam tahap finalisasi</p></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 shrink-0"><svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+            <div><p class="text-sm font-medium text-[#071C3C]">Tim Medis Siaga</p><p class="text-xs text-slate-500">Tenaga medis dan ambulans siap</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="faq" class="section-padding relative overflow-hidden" style="background: #ffffff;">
+  <div class="blob w-[400px] h-[400px] bg-[#071C3C]/5 -top-20 -right-20"></div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Tanya Jawab</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3">FAQ</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    <div x-data="{ open: null }" class="space-y-4">
+      <div data-aos="fade-up" class="glass-card rounded-2xl p-6 gradient-border" :class="open === 0 ? 'faq-open' : ''">
+        <button @click="open = open === 0 ? null : 0" class="flex items-center justify-between w-full text-left">
+          <span class="font-bold text-[#071C3C]">Kapan pendaftaran KEJURDA FORKI Sumbar 2026 dibuka?</span>
+          <svg class="w-5 h-5 text-[#D8A62A] faq-toggle shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-content mt-3">
+          <p class="text-slate-600 text-sm leading-relaxed">Pendaftaran dibuka mulai Januari 2026. Seluruh kontingen dari 19 kabupaten/kota dapat mendaftar melalui portal resmi yang akan diumumkan kemudian.</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="50" class="glass-card rounded-2xl p-6 gradient-border" :class="open === 1 ? 'faq-open' : ''">
+        <button @click="open = open === 1 ? null : 1" class="flex items-center justify-between w-full text-left">
+          <span class="font-bold text-[#071C3C]">Siapa saja yang dapat mengikuti kejuaraan ini?</span>
+          <svg class="w-5 h-5 text-[#D8A62A] faq-toggle shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-content mt-3">
+          <p class="text-slate-600 text-sm leading-relaxed">Kejuaraan ini terbuka untuk atlet karate yang merupakan perwakilan resmi dari masing-masing kabupaten/kota di Sumatera Barat, sesuai dengan ketentuan dan klasifikasi yang ditetapkan oleh FORKI.</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100" class="glass-card rounded-2xl p-6 gradient-border" :class="open === 2 ? 'faq-open' : ''">
+        <button @click="open = open === 2 ? null : 2" class="flex items-center justify-between w-full text-left">
+          <span class="font-bold text-[#071C3C]">Berapa kategori yang dipertandingkan?</span>
+          <svg class="w-5 h-5 text-[#D8A62A] faq-toggle shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-content mt-3">
+          <p class="text-slate-600 text-sm leading-relaxed">Terdapat total 19 kategori pertandingan yang terdiri dari Kata (individu dan beregu), Kumite (individu dan beregu), serta kategori khusus berdasarkan kelompok usia dan jenis kelamin.</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="150" class="glass-card rounded-2xl p-6 gradient-border" :class="open === 3 ? 'faq-open' : ''">
+        <button @click="open = open === 3 ? null : 3" class="flex items-center justify-between w-full text-left">
+          <span class="font-bold text-[#071C3C]">Di mana venue pertandingan dilaksanakan?</span>
+          <svg class="w-5 h-5 text-[#D8A62A] faq-toggle shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-content mt-3">
+          <p class="text-slate-600 text-sm leading-relaxed">Seluruh pertandingan dipusatkan di GOR Pasaman, Kabupaten Pasaman. Lokasi ini mudah diakses dan dilengkapi dengan berbagai fasilitas pendukung.</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200" class="glass-card rounded-2xl p-6 gradient-border" :class="open === 4 ? 'faq-open' : ''">
+        <button @click="open = open === 4 ? null : 4" class="flex items-center justify-between w-full text-left">
+          <span class="font-bold text-[#071C3C]">Apada ada akomodasi untuk peserta dari luar kota?</span>
+          <svg class="w-5 h-5 text-[#D8A62A] faq-toggle shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-content mt-3">
+          <p class="text-slate-600 text-sm leading-relaxed">Ya, tersedia berbagai rekomendasi penginapan di sekitar venue mulai dari hotel, wisma tamu, hingga penginapan dengan berbagai kapasitas dan jarak tempuh yang dekat dari GOR Pasaman.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="kontak" class="section-padding relative overflow-hidden" style="background: #F8FAFC;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.3em] uppercase text-[#D8A62A] font-semibold">Kontak</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071C3C] mt-3">Hubungi Kami</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-[#D8A62A] to-[#F59E0B] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 sm:gap-12">
+      <div data-aos="fade-right" class="glass-card rounded-3xl p-6 sm:p-8 gradient-border">
+        <h3 class="text-xl font-bold text-[#071C3C] mb-6">Informasi Kontak</h3>
+        <div class="space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-[#D8A62A]/10 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-[#071C3C]">Lokasi</p>
+              <p class="text-slate-500 text-sm mt-1">GOR Pasaman, Jl. Raya Pasaman<br>Kabupaten Pasaman, Sumatera Barat</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-[#D8A62A]/10 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-[#071C3C]">Email</p>
+              <a href="mailto:info@kejurdaforki2026.id" class="text-slate-500 text-sm mt-1 hover:text-[#D8A62A] transition-colors">info@kejurdaforki2026.id</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-[#D8A62A]/10 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-[#D8A62A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-[#071C3C]">WhatsApp</p>
+              <a href="https://wa.me/6281234567890" target="_blank" class="text-slate-500 text-sm mt-1 hover:text-[#D8A62A] transition-colors">+62 812-3456-7890</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-100">
+          <p class="font-bold text-[#071C3C] mb-4">Ikuti Kami</p>
+          <div class="flex gap-3">
+            <a href="#" class="w-12 h-12 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center hover:bg-[#D8A62A]/10 transition-all hover:scale-110">
+              <svg class="w-5 h-5 text-[#071C3C]" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="w-12 h-12 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center hover:bg-[#D8A62A]/10 transition-all hover:scale-110">
+              <svg class="w-5 h-5 text-[#071C3C]" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+            <a href="#" class="w-12 h-12 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center hover:bg-[#D8A62A]/10 transition-all hover:scale-110">
+              <svg class="w-5 h-5 text-[#071C3C]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.122 7.133a.768.768 0 01.543.235.806.806 0 01.228.559v7.29c0 .213-.08.406-.228.559a.768.768 0 01-.543.235H6.878a.768.768 0 01-.543-.235.806.806 0 01-.228-.559v-7.29c0-.213.08-.406.228-.559a.768.768 0 01.543-.235h10.244zM12 9.5L9.5 12H11v3h2v-3h1.5L12 9.5z"/></svg>
+            </a>
+            <a href="#" class="w-12 h-12 rounded-2xl bg-[#071C3C]/5 flex items-center justify-center hover:bg-[#D8A62A]/10 transition-all hover:scale-110">
+              <svg class="w-5 h-5 text-[#071C3C]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" class="rounded-3xl overflow-hidden gradient-border" style="min-height: 400px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.606965397073!2d100.16603463355986!3d0.13919334371772912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302a9a03114676f7%3A0x744890746f20729a!2sGOR%20Tuanku%20Rao!5e1!3m2!1sid!2sid!4v1781788965024!5m2!1sid!2sid" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="relative overflow-hidden" style="background: #071C3C;">
+  <div class="blob w-[600px] h-[600px] bg-[#D8A62A]/5 -top-48 -left-48"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="logo-pasaman.png" alt="Pasaman" class="w-9 h-9 rounded-full object-contain">
+          <img src="logo-forki.png" alt="FORKI" class="w-9 h-9 rounded-full object-contain">
+          <div>
+            <p class="text-white text-sm font-bold leading-tight">FORKI SUMBAR</p>
+            <p class="text-[#D8A62A] text-[10px] tracking-[0.2em] uppercase">Kejurda 2026</p>
+          </div>
+        </div>
+        <p class="text-white/50 text-sm leading-relaxed">Kejuaraan Daerah FORKI Sumatera Barat 2026 — Ajang bergengsi atlet karate terbaik se-Sumatera Barat.</p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Quick Link</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#tentang" class="text-white/50 text-sm hover:text-[#D8A62A] transition-colors">Tentang</a></li>
+          <li><a href="#venue" class="text-white/50 text-sm hover:text-[#D8A62A] transition-colors">Venue</a></li>
+          <li><a href="#kategori" class="text-white/50 text-sm hover:text-[#D8A62A] transition-colors">Kategori</a></li>
+          <li><a href="#jadwal" class="text-white/50 text-sm hover:text-[#D8A62A] transition-colors">Jadwal</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Informasi</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#faq" class="text-white/50 text-sm hover:text-[#D8A62A] transition-colors">FAQ</a></li>
+          <li><a href="#kontak" class="text-white/50 text-sm hover:text-[#D8A62A] transition-colors">Kontak</a></li>
+          <li><a href="#beranda" class="text-white/50 text-sm hover:text-[#D8A62A] transition-colors">Beranda</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Kontak</h4>
+        <ul class="space-y-2.5 text-white/50 text-sm">
+          <li>GOR Pasaman</li>
+          <li>info@kejurdaforki2026.id</li>
+          <li>+62 812-3456-7890</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/5 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/40 text-xs">© 2026 FORKI Sumatera Barat. All rights reserved.</p>
+      <p class="text-white/30 text-xs">Kabupaten Pasaman</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-6 right-6 w-12 h-12 rounded-2xl bg-[#D8A62A] text-[#071C3C] flex items-center justify-center shadow-lg z-40 hover:scale-110 transition-transform" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+</button>
+
+<script>
+  // Loading Screen
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loading-screen').classList.add('hidden');
+    }, 800);
+  });
+
+  // AOS Init
+  AOS.init({ duration: 600, once: true, offset: 50 });
+
+  // Particles
+  (function() {
+    const canvas = document.getElementById('particles-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let w, h;
+
+    function resize() {
+      w = canvas.width = canvas.offsetWidth;
+      h = canvas.height = canvas.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * w;
+        this.y = Math.random() * h;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.5;
+        this.speedY = (Math.random() - 0.5) * 0.5;
+        this.opacity = Math.random() * 0.5 + 0.1;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0) this.x = w;
+        if (this.x > w) this.x = 0;
+        if (this.y < 0) this.y = h;
+        if (this.y > h) this.y = 0;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(216, 166, 42, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    const count = Math.min(80, Math.floor(w * h / 8000));
+    for (let i = 0; i < count; i++) particles.push(new Particle());
+
+    function animate() {
+      ctx.clearRect(0, 0, w, h);
+      particles.forEach(p => { p.update(); p.draw(); });
+
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(216, 166, 42, ${0.06 * (1 - dist / 120)})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
+  })();
+
+  // Navbar Scroll
+  const navbar = document.getElementById('navbar');
+  const backToTop = document.getElementById('back-to-top');
+  const scrollProgress = document.getElementById('scroll-progress');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    if (scrollTop > 80) {
+      navbar.classList.add('nav-scrolled');
+      backToTop.classList.add('visible');
+    } else {
+      navbar.classList.remove('nav-scrolled');
+      backToTop.classList.remove('visible');
+    }
+    scrollProgress.style.width = scrollPercent + '%';
+  });
+
+  // Countdown
+  function updateCountdown() {
+    const target = new Date('2026-06-15T00:00:00');
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) { document.getElementById('countdown').innerHTML = '<div class="text-white/60 text-lg">Sedang Berlangsung</div>'; return; }
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('days').textContent = String(d).padStart(2, '0');
+    document.getElementById('hours').textContent = String(h).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Counter Animation
+  const counterEls = document.querySelectorAll('.counter-value');
+  let countersAnimated = false;
+  function animateCounters() {
+    if (countersAnimated) return;
+    counterEls.forEach(el => {
+      const target = parseInt(el.getAttribute('data-target'));
+      const duration = 2000;
+      const step = Math.ceil(target / (duration / 16));
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = current;
+      }, 16);
+    });
+    countersAnimated = true;
+  }
+
+  // Intersection Observer for counters
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { animateCounters(); counterObserver.disconnect(); }
+    });
+  }, { threshold: 0.3 });
+  if (counterEls.length > 0) counterObserver.observe(counterEls[0].closest('.glass-card') || counterEls[0]);
+
+  // Swiper Gallery
+  new Swiper('#gallerySwiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: { rotate: 0, stretch: 0, depth: 100, modifier: 2, slideShadows: false },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    loop: true,
+    breakpoints: {
+      320: { coverflowEffect: { depth: 50, modifier: 1 } },
+      768: { coverflowEffect: { depth: 100, modifier: 2 } }
+    }
+  });
+
+  // Lucide Icons
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
